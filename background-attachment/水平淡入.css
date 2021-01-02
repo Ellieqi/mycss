@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.landingcontainer {
+    /* width: 200px; */
+    height: 300px;
+    background: url(https://i.loli.net/2020/12/26/WC7bTH83fSJvuF9.jpg), no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* 让图片能够自适应填充整个画面 */
+    position: relative;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    position: relative; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 310px;
+    height: 190px; */
+    /* background-color: rgba(255, 255, 255, 0.25); */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 20px;
+    animation: containerspan 1s ease-in-out forwards;
+}
+
+
+/* .landingcontainer {
+    /* transition: 0.5s all ease; */
+
+
+/* 
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+
+/* width: 310px;
+    height: 190px; */
+
+
+/* background-color: rgba(255, 255, 255, 0.25); */
+
+box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(3px);
+border-radius: 20px;
+animation: containerspan 1s ease-in-out forwards;
+
+}
+*/ @keyframes containerspan {
+    */ 0% {
+        width: 0;
+        height: 0;
+    }
+    
+    100% {
+        width: 310px;
+        height: 190px;
+    }
+}
+.title {
+    /* position: absolute; */
+    
+    color: rgba(255, 255, 255, .8);
+    /* color: rgba(0, 0, 0, .5); */
+    
+    text-shadow: 3px 3px 32px black;
+    text-align: center;
+    /* font-size: 5vh; */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif;
+     */
+    /* font-family: cursive; */
+    /* 
+     */
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: textspan 1s ease-in-out forwards;
+}
+@keyframes textspan {
+    30% {
+        font-size: 0vh;
+    }
+    
+    100% {
+        font-size: 5vh;
+    }
+}
